@@ -70,5 +70,7 @@ function operacionResuelta(){
 }
 
 function escribircadena(valor){
+    var visor = document.getElementById('visortxt')
+    visor += valor
     renglon +=valor
 }

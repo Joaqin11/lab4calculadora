@@ -11,7 +11,15 @@
 <body>
     <div class="container">
         <div class="visor">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Calculadora TSP</span>
+                </div>
+                <textarea name="visortxt" id="visortxt" class="form-control" aria-label="Calculadora TSP" readonly="readonly"></textarea>
+            </div>
             <div class="botonera">
+                <button onclick="borrarcadena('C')">C</button>
+                <button onclick="borraruncaracter('CE')">CE</button>
                 <button onclick="escribircadena('+')">+</button>
                 <button onclick="escribircadena('-')">-</button>
                 <button onclick="escribircadena('/')">/</button>
@@ -27,9 +35,6 @@
                 <button onclick="escribircadena('9')">9</button>
                 <button onclick="escribircadena('0')">0</button>
                 <button onclick="operacionResuelta()">=</button>
-                <button></button>
-                <button></button>
-
             </div>
         </div>
     </div>
