@@ -77,7 +77,7 @@ function escribircadena(valor){
     document.getElementById("visortxt").value+=valor
     renglon +=valor
 }
-
+//no se si comiteo
 function limpiarTextArea(){
     document.getElementById("visortxt").value = ''
 }
