@@ -4,3 +4,6 @@
 .btnes {
 	display: flex;
 }
+body {
+	background-color: black;
+}

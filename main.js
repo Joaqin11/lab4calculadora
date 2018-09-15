@@ -16,25 +16,25 @@ function leercadena(){
         resta = renglon.indexOf('-')
         division = renglon.indexOf('/')
         multiplicacion = renglon.indexOf('*')
-        if(suma =! -1){
+        if(suma != -1){
             cadena = renglon.split('+')
             num1 = Number(cadena[0])
             operacion('+')
             num2 = Number(cadena[1])
         }
-        else if (resta =! -1){
+        else if (resta != -1){
             cadena = renglon.split('-')
             num1 = Number(cadena[0])
             operacion('-')
             num2 = Number(cadena[1])
         }
-        else if (division =! -1){
+        else if (division != -1){
             cadena = renglon.split('/')
             num1 = Number(cadena[0])
             operacion('/')
             num2 = Number(cadena[1])
         }
-        else{ //if (multiplicacion =! -1)
+        else{ //if (multiplicacion != -1)
             cadena = renglon.split('*')
             num1 = Number(cadena[0])
             operacion('*')
@@ -45,6 +45,7 @@ function leercadena(){
 
 function operacionResuelta(){
     leercadena()
+    
     var res = 0
     switch (op){
         case '+':
@@ -65,12 +66,18 @@ function operacionResuelta(){
     console.log(num2)
     console.log('=')
     console.log(res)
+    document.getElementById("visortxt").value+=' = '.concat(res).concat('\n');
     renglon = ''
     return res
 }
 
 function escribircadena(valor){
     var visor = document.getElementById('visortxt')
-    visor += valor
+    //visor += valor
+    document.getElementById("visortxt").value+=valor
     renglon +=valor
+}
+
+function limpiarTextArea(){
+    document.getElementById("visortxt").value = ''
 }
