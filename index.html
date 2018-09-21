@@ -31,8 +31,8 @@
               <br>
               <div class="btn-group btn-group" role="group" aria-labelledby="btnesOperadores">
                 
-                <button class="btn btn-light" onclick="borrarcadena('C')">C</button>
-                <button class="btn btn-light" onclick="borraruncaracter('CE')">CE</button>
+                <button class="btn btn-light" onclick="borrarcadena()">C</button>
+                <button class="btn btn-light" onclick="borraruncaracter()">CE</button>
                 <button class="btn btn-light" onclick="escribircadena('+')">+</button>
                 <button class="btn btn-light" onclick="escribircadena('-')">-</button>
                 <button class="btn btn-light" onclick="escribircadena('/')">/</button>
@@ -61,6 +61,14 @@
                 <button class="btn btn-light col-6" onclick="escribircadena('0')">0</button>
                 <button class="btn btn-light col-6" onclick="operacionResuelta()">=</button>
               </div>
+              <br>
+              <div class="botonMostrar text-center" role="group" aria-labelledby="botonMostrar">
+                <button class="btn btn-secondary" onclick="mostrarOperacionesDelArreglo()">Operaciones Realizadas</button>
+              </div>
+              <br>
+              <ul class="list-group text-center" id="listaop">
+                <br>
+              </ul>
             </div>
           </div>
         </div>
