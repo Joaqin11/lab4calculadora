@@ -1,1 +1,3 @@
-# lab4calculadora Calculadora hecha en Javascript y bootstrap
+# lab4calculadora 
+
+Calculadora hecha en Javascript y bootstrap
